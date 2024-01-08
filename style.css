@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Roboto Serif', serif;
+}
+
+nav {
+    background-color: #270082;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 55px;
+}
+
+nav .mainMenu {
+    display: flex;
+    list-style: none;
+}
+
+nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s ease;
+    letter-spacing: 1px;
+}
+
+nav .mainMenu li a:hover {
+    color: gray;
+}
+
+nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+}
+
+nav .mainMenu .closeMenu,
+.icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: rgb(0, 110, 255);
+}
+
+.fa-twitter:hover {
+    color: rgb(86, 154, 243);
+}
+
+.fa-instagram:hover {
+    color: rgb(255, 0, 191);
+}
+
+.fa-github:hover {
+    color: rgb(255, 123, 0);
+}
+
+nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    /* text-transform: uppercase; */
+    font-size: 15px;
+}
+
+/* MyTunes Home Section */
+
+.hero-home {
+    background-image: url("/Web/Music/images/Frame.png");
+    height: 95vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.my-tunes {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 95vh;
+}
+
+.hero-heading {
+    font-size: 72px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-short-para {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hero-long-para {
+    width: 841px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.song-details {
+    height: 806px;
+    background-color: #281154;
+}
+
+/* Music Section */
+
+.song-details {
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.music-box {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
+    /* border: 2px solid green; */
+    /* height: 40px; */
+}
+
+.music-box h4 {
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.song-detail-heading {
+    font-size: 24px;
+    color: #fff;
+    line-height: 29px;
+}
+
+.song-detail-para {
+    width: 970px;
+    color: #fff;
+    margin-top: 40px;
+    line-height: 29px;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.start-trail {
+    margin-top: 30px;
+    min-height: 55px;
+    width: 183px;
+    font-size: 18px;
+    background-color: rgb(238, 101, 52);
+    border: none;
+    color: #fff;
+    line-height: 29px;
+    cursor: pointer;
+}
+
+.start-trail:hover {
+    background-color: rgb(214, 106, 66);
+    transition: .2s;
+}
+
+.orange-music {
+    font-size: 14px;
+    /* width: 435px; */
+    margin-top: 30px;
+    color: #fff;
+}
+
+.song-img {
+    margin-top: 60px;
+}
+
+.tv-collection-para {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 70px;
+    text-align: center;
+}
+
+.tv-collection-log-para {
+    width: 1045px;
+    text-align: center;
+    margin-top: 40px;
+    line-height: 32px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #000;
+}
+
+.tv-collection-button {
+    width: 133px;
+    min-height: 50px;
+    /* padding: 30px; */
+    background-color: #270082;
+    color: #fff;
+    border: none;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.macbook {
+    width: 1200px;
+    height: 600px;
+    margin-top: 50px;
+}
+
+/* .entertainment-page{
+    background-image: url("/Web/Music/images/ent.png");
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top: 1430px;
+    opacity: .8;
+    background: rgba(0, 0, 0, 0.5);
+} */
+
+/* .entertainment-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.entertainment-heading {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    line-height: 29px;
+} */
+
+.entertainment-img {
+    margin-top: 1430px;
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Card */
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.card-container {
+    width: 1200px;
+    display: flex;
+    gap: 40px;
+    margin-top: 100px;
+}
+
+.card-heading {
+    font-size: 24px;
+    line-height: 29px;
+    color: #000;
+}
+
+.card-para {
+    font-size: 14px;
+    line-height: 29px;
+    color: #000;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+
+.card-para-2 {
+    font-size: 14px;
+    line-height: 29px;
+    margin-top: 15px;
+}
+
+.card-btn {
+    width: 113px;
+    height: 40px;
+    background-color: #270082;
+    color: #fff;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer-upper {
+    background-color: #270082;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.footer-upper .container {
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.footer-upper h4 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+
+.footer-lower {
+    background-color: #5417e2;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+ul li {
+    list-style: none;
+}
+
+@media (max-width: 800px) {
+    nav .mainMenu {
+        height: 100vh;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        left: 0px;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 0, 0);
+        transition: top 1s ease 0s;
+        display: none;
+        background-color: #270082;
+    }
+
+    nav .mainMenu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    nav .openMenu {
+        display: block;
+    }
+
+    nav .mainMenu li a:hover {
+        background: none;
+        color: gray;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    .hero-heading {
+        font-size: 42px;
+    }
+
+    .hero-short-para {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .hero-long-para {
+        width: 300px;
+        text-align: center;
+    }
+
+    /* Music */
+
+    .song-detail-para {
+        /* width: 970px; */
+        width: 350px;
+        color: #fff;
+        margin-top: 40px;
+        line-height: 29px;
+        align-items: center;
+    }
+
+    .song-img {
+        margin-top: 60px;
+        height: 500px;
+        width: 350px;
+    }
+
+    .start-trail {
+        width: 250px;
+    }
+
+    .orange-music {
+        width: 300px;
+        color: #fff;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .tv-collection-log-para {
+        width: 300px;
+    }
+
+    .macbook {
+        width: 350px;
+        height: 600px;
+    }
+
+    .entertainment-img {
+
+        margin-top: 1200px;
+    }
+
+    .card-container {
+        width: 300px;
+        flex-direction: column;
+    }
+
+    .card-img {
+        width: 300px;
+    }
+
+    .footer-upper .container {
+        display: flex;
+        color: white;
+        /* justify-content: space-evenly; */
+        flex-direction: column;
+    }
+}
